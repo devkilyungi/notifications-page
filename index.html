@@ -1,51 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./app.js" defer></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="title-section">
+          <h2>Notifications</h2>
+          <p class="notification-count">3</p>
+        </div>
+        <button>Mark all as read</button>
+      </header>
 
-  Notifications 3
+      <section class="notification-area">
+        <div class="notification-card">
+          <img
+            src="./assets/images/avatar-mark-webber.webp"
+            alt="profile picture"
+          />
+          <div class="text-section">
+            <p>
+              <a href="#"><strong>Mark Webber</strong></a> reacted to your
+              recent post
+              <a href="#"><strong>My first tournament today!</strong></a>
+              <span>&CenterDot;</span>
+            </p>
+            <p class="time-received">1 min ago</p>
+          </div>
+        </div>
 
-  Mark all as read
+        <div class="notification-card">
+          <img
+            src="./assets/images/avatar-angela-gray.webp"
+            alt="profile picture"
+          />
+          <div class="text-section">
+            <p>
+              <a href="#"><strong>Angela Gray</strong></a> followed you
+              <span>&CenterDot;</span>
+            </p>
+            <p class="time-received">5 min ago</p>
+          </div>
+        </div>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+        <div class="notification-card">
+          <img
+            src="./assets/images/avatar-jacob-thompson.webp"
+            alt="profile picture"
+          />
+          <div class="text-section">
+            <p>
+              <a href="#"><strong>Jacob Thompson</strong></a> has joined your
+              group
+              <a href="#"><strong>Chess Club</strong></a>
+              <span>&CenterDot;</span>
+            </p>
+            <p class="time-received">1 day ago</p>
+          </div>
+        </div>
 
-  Angela Gray followed you
-  5m ago
+        <div class="notification-card">
+          <img
+            src="./assets/images/avatar-rizky-hasanuddin.webp"
+            alt="profile picture"
+          />
+          <div class="text-section">
+            <p>
+              <a href="#"><strong>Rizky Hasanuddin</strong></a> sent you a
+              private message
+            </p>
+            <p class="time-received">5 days ago</p>
+            <p class="message-container">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </p>
+          </div>
+        </div>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+        <div class="notification-card">
+          <img
+            src="./assets/images/avatar-kimberly-smith.webp"
+            alt="profile picture"
+          />
+          <div class="text-section">
+            <p>
+              <a href="#"><strong>Kimberly Smith</strong></a> commented on your
+              picture
+            </p>
+            <p class="time-received">1 week ago</p>
+          </div>
+          <img src="./assets/images/image-chess.webp" alt="" />
+        </div>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+        <div class="notification-card">
+          <img
+            src="./assets/images/avatar-nathan-peterson.webp"
+            alt="profile picture"
+          />
+          <div class="text-section">
+            <p>
+              <a href="#"><strong>Nathan Peterson</strong></a> reacted to your
+              recent post
+              <a href="#"
+                ><strong
+                  >5 end-game strategies to increase your win rate</strong
+                ></a
+              >
+            </p>
+            <p class="time-received">2 weeks ago</p>
+          </div>
+        </div>
 
-  Kimberly Smith commented on your picture
-  1 week ago
+        <div class="notification-card">
+          <img
+            src="./assets/images/avatar-anna-kim.webp"
+            alt="profile picture"
+          />
+          <div class="text-section">
+            <p>
+              <a href="#"><strong>Anna Kim</strong></a> left the group
+              <a href="#"><strong>Chess Club</strong></a>
+            </p>
+            <p class="time-received">2 weeks ago</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.twitter.com/vkilyungi" target="_blank">devkilyungi</a>.
+      </div>
+    </footer>
+  </body>
 </html>
