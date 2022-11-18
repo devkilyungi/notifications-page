@@ -1,11 +1,161 @@
 @import "./reset";
 @import "./variables";
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+body {
+  height: auto;
+  width: 100vw;
+  padding: 20px 15px;
+  background-color: $very-light-grayish-blue;
+  @include default-link-style;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+main {
+  height: auto;
+  width: 100%;
+
+  header {
+    height: 9vh;
+    width: 100%;
+    @include display-flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .title-section {
+      @include display-flex;
+      gap: 10px;
+
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 24px;
+        font-weight: bold;
+        background-color: $blue;
+        color: $white;
+        line-height: 35px;
+        padding: 0 16px;
+        border-radius: 0.65rem;
+      }
+    }
+
+    button {
+      @include basic-btn-style;
+      font-size: 16px;
+      color: $dark-grayish-blue;
+    }
+  }
+
+  .notification-area {
+    height: auto;
+    width: 100%;
+
+    .notification-card {
+      min-height: 8vh;
+      width: 100%;
+      @include display-flex;
+      gap: 15px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      padding: 10px 20px;
+      // todo: insert grid for displaying card layout 5 columns / 1 row
+
+      img {
+        height: 45px;
+        width: 45px;
+        align-self: flex-start;
+        margin-top: 10px;
+      }
+
+      .text-section {
+        width: 100%;
+        font-size: 18px;
+        margin-top: 5px;
+
+        #notification-text {
+          color: $dark-grayish-blue;
+          position: relative;
+
+          #name {
+            color: $very-dark-blue;
+          }
+          .title-link {
+            color: $dark-grayish-blue;
+          }
+        }
+
+        .time-received {
+          color: $grayish-blue;
+        }
+      }
+    }
+
+    .notification-card:nth-child(1) {
+      background-color: $light-grayish-blue-2;
+
+      .text-section {
+        #notification-text {
+          &::after {
+            @include red-dot;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    .notification-card:nth-child(2) {
+      background-color: $light-grayish-blue-2;
+
+      .text-section {
+        #notification-text {
+          &::after {
+            @include red-dot;
+          }
+        }
+      }
+    }
+
+    .notification-card:nth-child(3) {
+      background-color: $light-grayish-blue-2;
+
+      .text-section {
+        #notification-text {
+          &::after {
+            @include red-dot;
+          }
+        }
+      }
+    }
+
+    .notification-card:nth-child(4) {
+      .text-section {
+        #message-container {
+          border: 1px solid $grayish-blue;
+          padding: 20px;
+          margin: 10px 0;
+          border-radius: 5px;
+          color: $dark-grayish-blue;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 7vh;
+  width: 100%;
+  position: relative;
+
+  .attribution {
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    @include center-position;
+    color: $blue;
+  }
+
+  .attribution a {
+    font-size: 16px;
+    color: $very-dark-blue;
+  }
 }

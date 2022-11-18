@@ -43,6 +43,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- Mobile first approach
 
 ### What I learned
 

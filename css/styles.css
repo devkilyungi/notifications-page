@@ -6,6 +6,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 html,
@@ -54,11 +55,156 @@ h6 {
   isolation: isolate;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+body {
+  height: auto;
+  width: 100vw;
+  padding: 20px 15px;
+  background-color: hsl(210deg, 60%, 98%);
+}
+body a {
+  text-decoration: none;
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
 }
 
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
+main {
+  height: auto;
+  width: 100%;
+}
+main header {
+  height: 9vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+main header .title-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main header .title-section h2 {
+  font-size: 28px;
+}
+main header .title-section p {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: hsl(219deg, 85%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  line-height: 35px;
+  padding: 0 16px;
+  border-radius: 0.65rem;
+}
+main header button {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 2px 8px;
+  line-height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: hsl(219deg, 12%, 42%);
+}
+main .notification-area {
+  height: auto;
+  width: 100%;
+}
+main .notification-area .notification-card {
+  min-height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+}
+main .notification-area .notification-card img {
+  height: 45px;
+  width: 45px;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+main .notification-area .notification-card .text-section {
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5px;
+}
+main .notification-area .notification-card .text-section #notification-text {
+  color: hsl(219deg, 12%, 42%);
+  position: relative;
+}
+main .notification-area .notification-card .text-section #notification-text #name {
+  color: hsl(224deg, 21%, 14%);
+}
+main .notification-area .notification-card .text-section #notification-text .title-link {
+  color: hsl(219deg, 12%, 42%);
+}
+main .notification-area .notification-card .text-section .time-received {
+  color: hsl(219deg, 14%, 63%);
+}
+main .notification-area .notification-card:nth-child(1) {
+  background-color: hsl(205deg, 33%, 90%);
+}
+main .notification-area .notification-card:nth-child(1) .text-section #notification-text::after {
+  content: "";
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 10px;
+  height: 10px;
+  width: 10px;
+  background-color: hsl(1deg, 90%, 64%);
+  border-radius: 50%;
+}
+main .notification-area .notification-card:nth-child(2) {
+  background-color: hsl(205deg, 33%, 90%);
+}
+main .notification-area .notification-card:nth-child(2) .text-section #notification-text::after {
+  content: "";
+  position: absolute;
+  margin-top: 8px;
+  height: 10px;
+  width: 10px;
+  background-color: hsl(1deg, 90%, 64%);
+  border-radius: 50%;
+}
+main .notification-area .notification-card:nth-child(3) {
+  background-color: hsl(205deg, 33%, 90%);
+}
+main .notification-area .notification-card:nth-child(3) .text-section #notification-text::after {
+  content: "";
+  position: absolute;
+  margin-top: 8px;
+  height: 10px;
+  width: 10px;
+  background-color: hsl(1deg, 90%, 64%);
+  border-radius: 50%;
+}
+main .notification-area .notification-card:nth-child(4) .text-section #message-container {
+  border: 1px solid hsl(219deg, 14%, 63%);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: hsl(219deg, 12%, 42%);
+}
+
+footer {
+  height: 7vh;
+  width: 100%;
+  position: relative;
+}
+footer .attribution {
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(219deg, 85%, 26%);
+}
+footer .attribution a {
+  font-size: 16px;
+  color: hsl(224deg, 21%, 14%);
 }/*# sourceMappingURL=styles.css.map */
