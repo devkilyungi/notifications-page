@@ -16,9 +16,9 @@ main {
   header {
     height: 9vh;
     width: 100%;
+    margin-bottom: 10px;
     @include display-flex;
     justify-content: space-between;
-    margin-bottom: 10px;
 
     .title-section {
       @include display-flex;
@@ -31,11 +31,11 @@ main {
       p {
         font-size: 24px;
         font-weight: bold;
-        background-color: $blue;
-        color: $white;
-        line-height: 35px;
         padding: 0 16px;
+        line-height: 35px;
         border-radius: 0.65rem;
+        color: $white;
+        background-color: $blue;
       }
     }
 
@@ -55,9 +55,9 @@ main {
       width: 100%;
       @include display-flex;
       gap: 15px;
-      border-radius: 15px;
-      margin-bottom: 15px;
       padding: 10px 20px;
+      margin-bottom: 15px;
+      border-radius: 15px;
       // todo: insert grid for displaying card layout 5 columns / 1 row
 
       img {
@@ -158,4 +158,24 @@ footer {
     font-size: 16px;
     color: $very-dark-blue;
   }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
