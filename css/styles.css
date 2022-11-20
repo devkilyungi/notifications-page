@@ -106,6 +106,9 @@ main header button {
   font-size: 16px;
   color: hsl(219deg, 12%, 42%);
 }
+main header button:hover {
+  color: hsl(219deg, 85%, 26%);
+}
 main .notification-area {
   height: auto;
   width: 100%;
@@ -138,8 +141,14 @@ main .notification-area .notification-card .text-section #notification-text {
 main .notification-area .notification-card .text-section #notification-text #name {
   color: hsl(224deg, 21%, 14%);
 }
+main .notification-area .notification-card .text-section #notification-text #name:hover {
+  color: hsl(219deg, 85%, 26%);
+}
 main .notification-area .notification-card .text-section #notification-text .title-link {
   color: hsl(219deg, 12%, 42%);
+}
+main .notification-area .notification-card .text-section #notification-text .title-link:hover {
+  color: hsl(219deg, 85%, 26%);
 }
 main .notification-area .notification-card .text-section .time-received {
   color: hsl(219deg, 14%, 63%);
@@ -168,6 +177,7 @@ main .notification-area .notification-card:nth-child(2) .text-section #notificat
   width: 10px;
   background-color: hsl(1deg, 90%, 64%);
   border-radius: 50%;
+  margin-left: 10px;
 }
 main .notification-area .notification-card:nth-child(3) {
   background-color: hsl(205deg, 33%, 90%);
@@ -180,6 +190,7 @@ main .notification-area .notification-card:nth-child(3) .text-section #notificat
   width: 10px;
   background-color: hsl(1deg, 90%, 64%);
   border-radius: 50%;
+  margin-left: 10px;
 }
 main .notification-area .notification-card:nth-child(4) .text-section #message-container {
   border: 1px solid hsl(219deg, 14%, 63%);
@@ -209,7 +220,167 @@ footer .attribution a {
   color: hsl(224deg, 21%, 14%);
 }
 
+@media only screen and (max-width: 362px) {
+  main header .title-section h2 {
+    font-size: 24px;
+  }
+  main header .title-section p {
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 25px;
+    border-radius: 0.55rem;
+  }
+  main header button {
+    font-size: 14px;
+  }
+  main .notification-area .notification-card {
+    min-height: 6vh;
+  }
+  main .notification-area .notification-card img {
+    height: 35px;
+    width: 35px;
+    margin-top: 12px;
+  }
+  main .notification-area .notification-card .text-section {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  footer .attribution {
+    font-size: 16px;
+  }
+  footer .attribution a {
+    font-size: 14px;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    padding: 24px;
+  }
+  main header .title-section h2 {
+    font-size: 32px;
+  }
+  main header .title-section p {
+    font-size: 28px;
+    padding: 0 18px;
+  }
+  main header button {
+    font-size: 20px;
+  }
+  main .notification-area .notification-card {
+    margin-bottom: 18px;
+    border-radius: 13px;
+  }
+  main .notification-area .notification-card img {
+    height: 50px;
+    width: 50px;
+    margin-top: 12px;
+  }
+  main .notification-area .notification-card .text-section {
+    font-size: 22px;
+  }
+  footer .attribution {
+    font-size: 22px;
+  }
+  footer .attribution a {
+    font-size: 18px;
+  }
+}
 /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 24px 48px;
+  }
+  main header {
+    margin-bottom: 24px;
+  }
+  main header .title-section h2 {
+    font-size: 36px;
+  }
+  main header .title-section p {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+  main header button {
+    font-size: 24px;
+  }
+  main .notification-area .notification-card {
+    margin-bottom: 22px;
+    border-radius: 11px;
+  }
+  main .notification-area .notification-card img {
+    height: 65px;
+    width: 65px;
+    margin-top: 10px;
+  }
+  main .notification-area .notification-card .text-section {
+    font-size: 26px;
+  }
+  footer .attribution {
+    font-size: 24px;
+  }
+  footer .attribution a {
+    font-size: 22px;
+  }
+}
 /* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=styles.css.map */
+@media only screen and (min-width: 992px) {
+  body {
+    height: 100%;
+    width: 75%;
+    padding: 24px 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  main {
+    background-color: hsl(210deg, 60%, 98%);
+    padding: 24px 48px;
+    border-radius: 15px;
+  }
+  main header button {
+    font-size: 26px;
+  }
+  main .notification-area .notification-card img {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+  }
+  main .notification-area .notification-card .text-section {
+    font-size: 22px;
+  }
+  footer .attribution {
+    font-size: 16px;
+  }
+  footer .attribution a {
+    font-size: 14px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    height: 100%;
+    width: 60%;
+    padding: 24px 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main .notification-area .notification-card img {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+  }
+  main .notification-area .notification-card .text-section {
+    font-size: 20px;
+  }
+  footer .attribution {
+    font-size: 18px;
+  }
+  footer .attribution a {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=styles.css.map */

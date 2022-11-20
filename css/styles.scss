@@ -43,6 +43,9 @@ main {
       @include basic-btn-style;
       font-size: 16px;
       color: $dark-grayish-blue;
+      &:hover{
+        color: $blue;
+      }
     }
   }
 
@@ -78,9 +81,15 @@ main {
 
           #name {
             color: $very-dark-blue;
+            &:hover{
+              color: $blue;
+            }
           }
           .title-link {
             color: $dark-grayish-blue;
+            &:hover{
+              color: $blue;
+            }
           }
         }
 
@@ -110,6 +119,7 @@ main {
         #notification-text {
           &::after {
             @include red-dot;
+            margin-left: 10px;
           }
         }
       }
@@ -122,6 +132,7 @@ main {
         #notification-text {
           &::after {
             @include red-dot;
+            margin-left: 10px;
           }
         }
       }
@@ -160,22 +171,238 @@ footer {
   }
 }
 
+// Extra small devices and foldables (around 360px, and below)
+@media only screen and(max-width: 362px) {
+  main {
+    header {
+      .title-section {
+        h2 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 20px;
+          padding: 0 10px;
+          line-height: 25px;
+          border-radius: 0.55rem;
+        }
+      }
+      button {
+        font-size: 14px;
+      }
+    }
+
+    .notification-area {
+      .notification-card {
+        min-height: 6vh;
+
+        img {
+          height: 35px;
+          width: 35px;
+          margin-top: 12px;
+        }
+
+        .text-section {
+          font-size: 16px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  footer {
+    .attribution {
+      font-size: 16px;
+    }
+
+    .attribution a {
+      font-size: 14px;
+    }
+  }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  body {
+    padding: 24px;
+  }
 
+  main {
+    header {
+      .title-section {
+        h2 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 28px;
+          padding: 0 18px;
+        }
+      }
+
+      button {
+        font-size: 20px;
+      }
+    }
+    .notification-area {
+      .notification-card {
+        margin-bottom: 18px;
+        border-radius: 13px;
+
+        img {
+          height: 50px;
+          width: 50px;
+          margin-top: 12px;
+        }
+
+        .text-section {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  footer {
+    .attribution {
+      font-size: 22px;
+    }
+
+    .attribution a {
+      font-size: 18px;
+    }
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  body {
+    padding: 24px 48px;
+  }
 
+  main {
+    header {
+      margin-bottom: 24px;
+
+      .title-section {
+        h2 {
+          font-size: 36px;
+        }
+        p {
+          font-size: 32px;
+          padding: 0 20px;
+        }
+      }
+
+      button {
+        font-size: 24px;
+      }
+    }
+
+    .notification-area {
+      .notification-card {
+        margin-bottom: 22px;
+        border-radius: 11px;
+
+        img {
+          height: 65px;
+          width: 65px;
+          margin-top: 10px;
+        }
+
+        .text-section {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+  footer {
+    .attribution {
+      font-size: 24px;
+    }
+
+    .attribution a {
+      font-size: 22px;
+    }
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  body {
+    height: 100%;
+    width: 75%;
+    padding: 24px 48px;
+    @include center-position;
+    background-color: $white;
+  }
+  
+  main {
+    background-color: $very-light-grayish-blue;
+    padding: 24px 48px;
+    border-radius: 15px;
 
+
+    header {
+      button {
+        font-size: 26px;
+      }
+    }
+    .notification-area {
+      .notification-card {
+        img {
+          height: 50px;
+          width: 50px;
+          margin-top: 10px;
+        }
+
+        .text-section {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  footer {
+    .attribution {
+      font-size: 16px;
+    }
+
+    .attribution a {
+      font-size: 14px;
+    }
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  body {
+    height: 100%;
+    width: 60%;
+    padding: 24px 48px;
+    @include center-position;
+  }
 
+  main {
+    .notification-area {
+      .notification-card {
+        img {
+          height: 50px;
+          width: 50px;
+          margin-top: 10px;
+        }
+
+        .text-section {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  footer {
+    .attribution {
+      font-size: 18px;
+    }
+
+    .attribution a {
+      font-size: 16px;
+    }
+  }
 }
