@@ -32,28 +32,36 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github page](https://your-live-site-url.com)
 
 ## My process
+
+- I first built the mobile design, then optimised for smaller devices.
+- I then added resposiveness for larger screen devices.
+- Finally I added hover states and the ability to clear unread messages using JavaScript.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile first approach
 
 ### What I learned
 
+- How to set up and use variable fonts.
+- Good breakpoints to use in order to have a site responsive for most, if not all, screen sizes.
+
 ### Continued development
+
+- More experimentation with variable fonts.
+- Complex projects that use more JavaScript.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Get started with variable fonts in CSS](https://www.creativebloq.com/features/get-started-with-variable-fonts-in-css) - This helped me quickly get started with variable fonts. It explains the concept easily and has good examples of use cases.
 
 ## Author
 
-- Frontend Mentor - [@username](https://www.frontendmentor.io/profile/username)
+- Frontend Mentor - [@devkilyungi](https://www.frontendmentor.io/profile/devkilyungi)
 - Twitter - [@vkilyungi](https://www.twitter.com/vkilyungi)
