@@ -12,6 +12,11 @@ $grayish-blue: hsl(219, 14%, 63%);
 $dark-grayish-blue: hsl(219, 12%, 42%);
 $very-dark-blue: hsl(224, 21%, 14%);
 
+@font-face {
+	font-family: 'PlusJakartaSans';
+	src: url('/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
 @mixin basic-btn-style {
   border: none;
   outline: none;

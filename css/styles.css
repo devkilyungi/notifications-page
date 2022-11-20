@@ -55,6 +55,14 @@ h6 {
   isolation: isolate;
 }
 
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url("/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+html, body {
+  font-family: PlusJakartaSans;
+}
+
 body {
   height: auto;
   width: 100vw;
@@ -317,6 +325,9 @@ footer .attribution a {
     background-color: hsl(210deg, 60%, 98%);
     padding: 24px 48px;
     border-radius: 15px;
+  }
+  main header .title-section p {
+    padding: 5px 18px;
   }
   main header button {
     font-size: 26px;

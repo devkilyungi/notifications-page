@@ -1,6 +1,10 @@
 @import "./reset";
 @import "./variables";
 
+html,body{
+  font-family: PlusJakartaSans;
+}
+
 body {
   height: auto;
   width: 100vw;
@@ -314,6 +318,11 @@ footer {
     border-radius: 15px;
 
     header {
+      .title-section{
+        p{
+          padding: 5px 18px;
+        }
+      }
       button {
         font-size: 26px;
       }
