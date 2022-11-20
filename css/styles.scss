@@ -146,6 +146,11 @@ main {
           margin: 10px 0;
           border-radius: 5px;
           color: $dark-grayish-blue;
+
+          &:hover{
+            background-color: $light-grayish-blue-2;
+            cursor: pointer;
+          }
         }
       }
     }

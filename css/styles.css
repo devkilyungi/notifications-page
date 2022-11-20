@@ -199,6 +199,10 @@ main .notification-area .notification-card:nth-child(4) .text-section #message-c
   border-radius: 5px;
   color: hsl(219deg, 12%, 42%);
 }
+main .notification-area .notification-card:nth-child(4) .text-section #message-container:hover {
+  background-color: hsl(205deg, 33%, 90%);
+  cursor: pointer;
+}
 
 footer {
   height: 7vh;
