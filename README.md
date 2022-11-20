@@ -28,11 +28,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Mobile view
+
+![Mobile view](assets/images/mobile.png)
+
+Desktop view
+
+![Desktop view](assets/images/desktop.png)
 
 ### Links
 
-- Live Site URL: [Github page](https://your-live-site-url.com)
+- Live Site URL: [Github page](https://devkilyungi.github.io/notifications-page/)
 
 ## My process
 
