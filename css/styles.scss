@@ -1,7 +1,7 @@
 @import "./reset";
 @import "./variables";
 
-html,body{
+html{
   font-family: PlusJakartaSans;
 }
 
@@ -9,7 +9,6 @@ body {
   height: auto;
   width: 100vw;
   padding: 20px 15px;
-  background-color: $very-light-grayish-blue;
   @include default-link-style;
 }
 
@@ -311,11 +310,11 @@ footer {
     @include center-position;
     background-color: $white;
   }
-
+  
   main {
-    background-color: $very-light-grayish-blue;
     padding: 24px 48px;
     border-radius: 15px;
+    background-color: $very-light-grayish-blue;
 
     header {
       .title-section{
