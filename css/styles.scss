@@ -43,7 +43,7 @@ main {
       @include basic-btn-style;
       font-size: 16px;
       color: $dark-grayish-blue;
-      &:hover{
+      &:hover {
         color: $blue;
       }
     }
@@ -61,7 +61,6 @@ main {
       padding: 10px 20px;
       margin-bottom: 15px;
       border-radius: 15px;
-      // todo: insert grid for displaying card layout 5 columns / 1 row
 
       img {
         height: 45px;
@@ -81,13 +80,13 @@ main {
 
           #name {
             color: $very-dark-blue;
-            &:hover{
+            &:hover {
               color: $blue;
             }
           }
           .title-link {
             color: $dark-grayish-blue;
-            &:hover{
+            &:hover {
               color: $blue;
             }
           }
@@ -99,58 +98,28 @@ main {
       }
     }
 
-    .notification-card:nth-child(1) {
+    // class that toggles read or unread status
+    .unread {
       background-color: $light-grayish-blue-2;
 
-      .text-section {
-        #notification-text {
-          &::after {
-            @include red-dot;
-            margin-left: 10px;
-          }
-        }
+      #notification-text::after {
+        @include red-dot;
+        margin-left: 10px;
       }
     }
 
-    .notification-card:nth-child(2) {
-      background-color: $light-grayish-blue-2;
+    //  class to format a child container containing referenced text
+    .includes-text-container{
+      #message-container {
+        border: 1px solid $grayish-blue;
+        padding: 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        color: $dark-grayish-blue;
 
-      .text-section {
-        #notification-text {
-          &::after {
-            @include red-dot;
-            margin-left: 10px;
-          }
-        }
-      }
-    }
-
-    .notification-card:nth-child(3) {
-      background-color: $light-grayish-blue-2;
-
-      .text-section {
-        #notification-text {
-          &::after {
-            @include red-dot;
-            margin-left: 10px;
-          }
-        }
-      }
-    }
-
-    .notification-card:nth-child(4) {
-      .text-section {
-        #message-container {
-          border: 1px solid $grayish-blue;
-          padding: 20px;
-          margin: 10px 0;
-          border-radius: 5px;
-          color: $dark-grayish-blue;
-
-          &:hover{
-            background-color: $light-grayish-blue-2;
-            cursor: pointer;
-          }
+        &:hover {
+          background-color: $light-grayish-blue-2;
+          cursor: pointer;
         }
       }
     }
@@ -338,12 +307,11 @@ footer {
     @include center-position;
     background-color: $white;
   }
-  
+
   main {
     background-color: $very-light-grayish-blue;
     padding: 24px 48px;
     border-radius: 15px;
-
 
     header {
       button {
