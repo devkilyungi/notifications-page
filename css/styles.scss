@@ -78,11 +78,11 @@ main {
         font-size: 18px;
         margin-top: 5px;
 
-        #notification-text {
+        .notification-text {
           color: $dark-grayish-blue;
           position: relative;
 
-          #name {
+          .name {
             color: $very-dark-blue;
             &:hover {
               color: $blue;
@@ -106,7 +106,7 @@ main {
     .unread {
       background-color: $light-grayish-blue-2;
 
-      #notification-text::after {
+      .notification-text::after {
         @include red-dot;
         margin-left: 10px;
       }

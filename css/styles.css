@@ -142,20 +142,20 @@ main .notification-area .notification-card .text-section {
   font-size: 18px;
   margin-top: 5px;
 }
-main .notification-area .notification-card .text-section #notification-text {
+main .notification-area .notification-card .text-section .notification-text {
   color: hsl(219deg, 12%, 42%);
   position: relative;
 }
-main .notification-area .notification-card .text-section #notification-text #name {
+main .notification-area .notification-card .text-section .notification-text .name {
   color: hsl(224deg, 21%, 14%);
 }
-main .notification-area .notification-card .text-section #notification-text #name:hover {
+main .notification-area .notification-card .text-section .notification-text .name:hover {
   color: hsl(219deg, 85%, 26%);
 }
-main .notification-area .notification-card .text-section #notification-text .title-link {
+main .notification-area .notification-card .text-section .notification-text .title-link {
   color: hsl(219deg, 12%, 42%);
 }
-main .notification-area .notification-card .text-section #notification-text .title-link:hover {
+main .notification-area .notification-card .text-section .notification-text .title-link:hover {
   color: hsl(219deg, 85%, 26%);
 }
 main .notification-area .notification-card .text-section .time-received {
@@ -164,7 +164,7 @@ main .notification-area .notification-card .text-section .time-received {
 main .notification-area .unread {
   background-color: hsl(205deg, 33%, 90%);
 }
-main .notification-area .unread #notification-text::after {
+main .notification-area .unread .notification-text::after {
   content: "";
   position: absolute;
   margin-top: 8px;
